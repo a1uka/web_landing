@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>aluka</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Aluka</a>
+      <nav>
+        <a href="index.html" >Home</a>
+        <a href="#" class="active">Projects</a>
+        <a href="lab.html">Lab</a>
+      </nav>
+    </header>
+    <section class="projects-wrapper">
+        <h1>Here's some of my CS projects.</h1>
+        <h1>(Other blocks is using just for tests)</h1>
+        <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <section class="projects flex-row" id="projects-container">
+            <div class="box-dynamic">
+                <h2>Matrix Determenant</h2>
+                <h3>
+                The code for this is in C.
+                The solution using dynamic memory, and the matrix is reduced to an upper triangular form.
+                </h3>
+                <div class="social-icons">
+                    <a href="https://github.com/a1uka/Matrix-Determenant" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="box-dynamic">
+                <h2>My second box</h2>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="box-dynamic">
+                <h2>My third box</h2>
+                <h3>Тут пока тоже ниче нет</h3>
+            </div>
+        </section>
+        <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
